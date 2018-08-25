@@ -1,0 +1,450 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DefaultMaster.master.cs"  %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Brain Bites@ITM</title>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link href="/Shared/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Shared/css/datepicker3.css" rel="stylesheet" />
+    <link href="/Shared/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/Footer-with-button-logo.css" rel="stylesheet" />
+    <link href="/css/delhiatglance.css" rel="stylesheet" />
+    <link href="/css/about.css" rel="stylesheet" />
+    <link href="/css/font.css" rel="stylesheet" />
+    <link href="/css/contact.css" rel="stylesheet" />
+    <link href="/Shared/css/carousel.css" rel="stylesheet" />
+    <link href="/Shared/css/UserCss.css" rel="stylesheet" />
+
+    <!--Custom Font-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    
+    <!-- Java Script-->
+    <script src="/Shared/js/jquery-3.3.1.min.js"></script>
+    <script src="/Shared/js/bootstrap.min.js"></script>
+    <script src="/Shared/js/bootstrap-datepicker.js"></script>
+    <script src="/Shared/js/userScript.js"></script>
+    
+    <script src="/Shared/js/jquery-1.11.1.min.js"></script>
+    <script src="/Shared/js/slick.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+  </script>
+    <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi,sd,ta,te,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
+}
+</script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <style>
+        .divClass {
+            font-size: 16px;
+            background-color: #FFFFFF;
+            width: 500px;
+            padding: 5px;
+        }
+         .divClass1 {
+            font-size: 16px;
+            background-color: #FFFFFF;
+            width: 100%;
+            padding: 500px;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+         .rmv-und {
+          text-decoration: none !important;
+        }
+         #grad1 {
+            height: 70px;
+            background: red; /* For browsers that do not support gradients */
+            background: linear-gradient(#5DADE2  , #E5E7E9  ); /* Standard syntax (must be last) */
+        }
+         .headimage{
+            background-color: #f2f3f4 ;
+            transition: height .5s;
+            height:80px;
+            width:100%;
+            position:fixed;
+            top:23px;
+            left:0px;
+            }
+
+        li {
+            float: left;
+        }
+        ul {
+            list-style-type: none;
+    
+            overflow: hidden;
+    
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+    
+            text-decoration: none;
+        }
+        .footer {
+           top:100%;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           height:200px;
+           background-color: #283747     ;
+           color: white;
+           text-align: center;
+        }
+        .footer1 {
+           top:100%;
+           left: 0;
+           bottom: 0;
+           width: 100%;
+           height:60px;
+           background-color: #000000    ;
+           color: white;
+           text-align: center;
+        }
+        .content {
+          padding: 16px;
+        }
+
+        .sticky {
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+
+        .overflow{
+            overflow:hidden;
+        }
+        body {
+            position: relative; 
+        }
+        .affix {
+            top:26px;
+            width: 100%;
+            z-index: 9999 !important;
+        }
+        .topaffix {
+            top:0px;
+            width: 100%;
+            z-index: 9999 !important;
+             position: -webkit-sticky;
+              position: fixed;
+             
+              
+        }
+
+        .navbar {
+            margin-bottom: 0px;
+        }
+
+        .affix ~ .container-fluid {
+           position: relative;
+           top: 50px;
+        }
+        .picaffix ~ .container-fluid {
+           position: relative;
+           top: 0px;
+        }
+
+       /* <!--font-size increase decrease-->*/
+       
+
+           .counter {
+            width: 20px;
+            height: 20px;
+            background: black;
+            color: #fff;
+            position: fixed;
+            top: 120px;
+            right: 0;
+            }
+
+           * {
+          box-sizing: border-box;
+              }
+        
+            .row1 {
+              padding: 2% 0;
+            }
+
+        .footerForm input[type=text] {
+                width: 100%;
+                padding:3px 15px;
+                margin:4px 0px; 
+                box-sizing: border-box;
+                border:3px solid #CCC;
+                
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                outline: none;
+                border-radius: 0px;
+            }
+        
+           .footerForm input[type=text]:focus {
+               border:3px solid #555;
+            }
+             
+
+            hr.style13 {
+	            height: 10px;
+	            border: 0;
+	            box-shadow: 0 10px 10px -10px #8c8b8b inset;
+                width:100%;
+            }
+             hr.style14 {
+	            height: 10px;
+	            border: 0;
+	            box-shadow: 0 10px 10px -10px #8c8b8b inset;
+            }
+
+             .font-family-use{
+                 font-family:Cambria;
+             }
+           /*-------------------- code to make logo image container responsive when screen width is less ---*/
+        @media screen and (max-width: 645px) {
+
+            #logo {
+                width: 50%;
+                height: 50%;
+            }
+            /*----------------for making logo shift left in small size ------------------*/
+
+            #logo1 {
+                width: 70%;
+                height: 70%;
+            }
+
+            #logoName {
+                width: 50%;
+                height: 50%;
+            }
+            .hover-footer {
+                color: black;
+            }
+
+            #logoDescription {
+                display: none;
+            }
+
+            #logoName span {
+                display: block;
+            }
+
+            #controlSize {
+                font-size: 14px;
+            }
+
+            .hideMe {
+                display: none;
+            }
+        }
+ 
+  @media screen and (max-width: 400px){
+       #navName{
+           font-size:12px;
+       }
+
+}
+            .grad-footer{
+                background: linear-gradient(to bottom right, #01274d  , #7ebaf6  );
+            }
+            .grad-footerslide{
+                background: linear-gradient(to bottom right,#565656     , #000000    );
+            }
+        
+        
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar .grad1" data-offset="50" >
+     <div class="top-wrapper topaffix" style="background-color:#F7F9F9  " >                    
+              <table class=" table-bordered" style="width:100%;height:26px">
+                <thread>
+                  <tr style="height:6px">
+                    <td class="hideMe" style="text-align: left;padding-left:20px; font-size:15px;width:40%;font-family:Calibri"> <img src="/image/icon/india.jpg" style="width:20px; height:12px">&nbsp&nbsp&nbsp&nbspGovernment of India </td>
+                    
+                    <%--<td style="text-align: center; width:auto;"> <a id="" class="rmv-und" href="#" style="font-size: 15px;font-family:Calibri;color: #585656  ">English </a> </td>
+                    <td style="text-align: center; width:auto;"> <a id="" class="rmv-und" href="#" style="font-size: 13px;font-family:Calibri;color: #585656 ;margin-top:8px ">
+हिंदी </a> </td>--%>
+                     <td> <div id="google_translate_element"></div></td> 
+                    <td style="text-align: center; width:auto;"><a id="linkIncrease" class="rmv-und " href="javascript:void(0)" style="font-size: 15px;font-family:Calibri;color: #585656  "><span> +A </span></a></td>
+                      <td style="text-align: center; width:auto;"> <a id="linkReset" class="rmv-und" href="javascript:void(0)" style="font-size: 15px;font-family:Calibri;color: #585656  ">&nbspA</a> </td>
+                    <td style="text-align: center; width:auto;"> <a id="linkDecrease" class="rmv-und" href="javascript:void(0)" style="font-size: 15px;font-family:Calibri;color: #585656;  ">-A </a> </td>
+                     
+                    <td style="text-align: center; width: 80px"> <a id="" class="rmv-und" href="Login.aspx" style="font-size: 15px;font-family:Calibri;color: #585656; "><img class="hideMe" src="/image/icon/login.png" style="width:17px; height:17px">&nbsp&nbsp<span>Login</span></a> </td>
+                    <td style="text-align: center; width: 80px"> <a id="" class="rmv-und" href="Signup.aspx" style="font-size: 15px;font-family:Calibri;color: #585656 ;"><img class="hideMe" src="/image/icon/user.png" style="width:15px; height:15px">&nbsp&nbspRegister</a> </td>
+                    <td style="text-align: center;"> <a id="" class="rmv-und" href="/Search.aspx"><img class="hideMe" src="/image/icon/search1.png" style="width:15px; height:15px"> </a> </td>
+                    <td style="text-align: center;"> <a id="" class="rmv-und" href="https://www.facebook.com/delhitourism/"><img src="/image/icon/facebook.png" style="width:15px; height:15px"> </a> </td>
+                    <td style="text-align: center;"> <a id="" class="rmv-und" href="https://www.instagram.com/lbbdelhincr/?hl=en"><img src="/image/icon/insta1.png" style="width:15px; height:15px"> </a> </td>
+                    <td style="text-align: center;"> <a id="" class="rmv-und" href="https://in.pinterest.com/explore/delhi-tourism/"><img src="/image/icon/pintrest.png" style="width:15px; height:15px"> </a> </td>
+                    <td style="text-align: center;"> <a id="" class="rmv-und" href="https://twitter.com/tourism_delhi?lang=en"><img src="/image/icon/twitter.png" style="width:15px; height:15px"> </a> </td>
+                    <td style="text-align: center;"> <a id="" class="rmv-und" href="https://www.youtube.com/channel/UC2mHUT1O3q_oIG0QqLqe1Zg"><img src="/image/icon/youtube.png" style="width:15px; height:15px"> </a> </td>
+                  </tr>
+                </thread>
+             </table>
+            </div>
+
+     <!-- top image-->
+        
+ 
+            <div id="headimage container-fluid" style="margin-top:25px" >
+                <img src="Image/header/headerimage.png" alt="header" width="100%" height="">
+	            <%--<div id="logoImg">
+	            <ul style="list-style: none ;">
+		            <li id="logo" > <a href="https://www.mygov.in/"> <img src="/image/header/degov.jpg" id="logo1" style="max-height: 100px;padding-left: 20px; padding-top:20px;"></a></li>
+		            <li id="logoName" style="float: left; padding-left: 50px;padding-top:  15px"><p style=" font-size: 30px; text-align: center;" class="font-to-Russo"><span id="controlSize" ><b>Government of Delhi</b><br>दिल्ली सरकार</span></li>
+		            <li id="logoDescription" style="float:left; margin-right:50px;float:right; padding-top: 5px"><img src="/image/header/dltour.png" style="height:100px; width: 400px" ></li>
+	            </ul>
+	            </div>--%>
+            </div>
+   
+
+    
+
+
+    <!-- Nav bar-->
+            <div>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="200" style="background-color:#07355A   ; color: #FDFEFE;opacity:.9 ; ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/Default.aspx" style="background-color: #eaeded ;color:#000000  ; font-family: Times New Roman;height:60px ;font-size:20px; border-bottom-right-radius:.5em; border-top-right-radius:.5em;border-top:1px solid #eaeded"><b id="navName">Single Window Clearance System</b></a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav " id="menu1" >
+          <li style="padding-top:3.5px;padding-left=2.5px;"><a href="/Default.aspx" id="default"><b >Home</b></a></li>
+          <li style="padding-top:3.5px"><a href="/place.aspx" id="dag"><b>Delhi At Glance</b></a></li>
+          <li style="padding-top:3.5px"><a href="/about.aspx" id="about"><b>About</b></a></li>
+          
+          <li style="padding-top:3.5px"><a href="/contact.aspx" id="contact"><b>Contact Us</b></a></li>
+        </ul>
+         
+      </div>
+    </div>
+  </div>
+</nav>   
+                </div>
+    <form id="form1" runat="server" role="form">
+        <asp:ScriptManager runat="server" ID="DefaultMasterScript"></asp:ScriptManager>
+
+        <div>
+                          
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <!-- logo image slider-->
+
+    <div class="content">
+</div>
+    <div class="footer">
+      <div class="row1 grad-footerslide" >
+    <div class="container">
+        <hr / class="style13" style="margin-top:5px">
+      <section class="customer-logos slider">
+        <div class="slide"><a href="#"><img src="/Image/footer/1.png" alt="innovation gov"></a></div>
+        <div class="slide"><a href="#"><img src="/Image/footer/2.png" alt="meity"></a></div>
+        <div class="slide"><a href="#"><img src="/Image/footer/3.png" alt="mygov"></a></div>
+        <div class="slide"><a href="#"><img src="/Image/footer/4.png" alt="pledge mygov"></a></div>
+        <div class="slide"><a href="#"><img src="/Image/footer/5.png" alt="datagov"></a></div>
+        <div class="slide"><a href="#"><img src="/Image/footer/6.png" alt="blog"></a></div>
+        <div class="slide"><a href="#"><img src="/Image/footer/7.png"alt="digitalindia"></a></div>
+        <div class="slide"><a href="#"><img src="/Image/footer/8.png" alt="egreeting"></a></div>
+      </section>
+        <hr / class="style14" style="margin-bottom:5px">
+    </div>
+  </div>
+    </div>
+     
+
+
+
+    <!--footer -->
+     
+       <footer id="myFooter" class="grad-footer" >
+        <div class="container" style="margin-top:auto;margin-bottom: auto;height: 230px;">
+            <div class="row">
+                <div class="col-sm-2">
+                    
+                    <ul style="padding-top:10px" >
+                        <li><a href="#" >Home</a></li><br /><br />
+                        <li><a href="/Login.aspx" >Log In</a></li><br /><br />
+                        <li><a href="/SignUp.aspx">Sign Up</a></li><br /><br />
+                        <li><a href="#">Forums</a></li><br />
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    
+                    <ul style="padding-top:10px">
+                        <li><a href="about.aspx">Information</a></li><br /><br />
+                        <li><a href="contact.aspx">Contact us</a></li><br /><br />
+                        <li><a href="FAQ.aspx">FAQ</a></li><br /><br />
+                        <li><a href="#">Help desk</a></li><br />
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-4" style="text-align:center">
+                    <img src="/image/footer/sih2k18.png" style="width:50%;height:50%;padding-top:10px;"  /><br />
+                    
+                </div>
+                <div class="col-sm-4 footerForm" style="padding-top:10px" >
+                    <form style="color:black" >
+                      <label for="fname" style="color:white">Email_ID</label>
+                      <input type="text" id="txt_useremail" name="Email_ID" placeholder="Email">
+                      <label for="lname" style="color:white">Query</label>
+                      <input type="text" id="txt_userquery" name="Query" style="height: 60px;" placeholder="query ">
+                    </form>
+                    <button type="button" class="btn btn-default" style="float:right; border-radius:1px;background-color:#E34635">Contact us</button>
+                </div>
+            </div>
+        </div>
+       <%-- <div class="footer-copyright grad-footerslide" style="position:sticky">
+            <p>© 2018 Copyright Authority</p>
+        </div>--%>
+    </footer>
+
+
+
+        
+</body>
+</html>
